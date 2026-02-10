@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Badge } from "@/components/ui/badge";
 import { 
-  BarChart3, 
   LayoutDashboard, 
   Upload, 
   Users, 
@@ -66,10 +65,8 @@ export function Sidebar({ onNavigate, activeSection = "dashboard", uploadedFiles
       {/* Logo */}
       <div className="p-6 border-b border-sidebar-border">
         <div className="flex items-center space-x-3">
-          <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-            <BarChart3 className="w-5 h-5 text-white" />
-          </div>
-          <h1 className="text-xl font-semibold text-sidebar-foreground">DataVision</h1>
+          <img src="/genesys-logo.png" alt="Genesys Cloud" className="w-8 h-8 object-contain" />
+          <h1 className="text-xl font-semibold text-sidebar-foreground">Genesys Cloud Dashboard</h1>
         </div>
       </div>
 
